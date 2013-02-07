@@ -30,6 +30,8 @@ gem 'formtastic'
 gem 'flutie'
 gem 'bourbon'
 gem 'airbrake'
+gem 'devise'
+gem 'versionist'
 
 group :development do
   gem 'foreman'
