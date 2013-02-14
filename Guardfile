@@ -5,7 +5,7 @@ guard 'spork' do
   watch %r{^config/initializers/.*\.rb$}
   watch 'config/routes.rb'
   watch 'Gemfile.lock'
-  watch 'spec/factories.rb'
+  watch 'spec/simple_factory.rb'
   watch 'spec/spec_helper.rb'
   watch %r{^spec/support/.*\.rb$}
   watch 'config/locales/.*'

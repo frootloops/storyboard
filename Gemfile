@@ -42,12 +42,13 @@ group :development, :test do
   gem 'guard-spork'
   gem 'rspec-rails'
   gem 'sham_rack'
+  gem 'forgery'
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'
-  gem 'factory_girl_rails'
   gem 'bourne'
   gem 'database_cleaner'
   gem 'timecop'
