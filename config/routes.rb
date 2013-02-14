@@ -1,4 +1,4 @@
-Storyshare::Application.routes.draw do
+Storyboard::Application.routes.draw do
   devise_for :users
 
 end

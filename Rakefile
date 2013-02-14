@@ -4,7 +4,7 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Storyshare::Application.load_tasks
+Storyboard::Application.load_tasks
 
 if defined?(RSpec)
   desc 'Run factory specs.'

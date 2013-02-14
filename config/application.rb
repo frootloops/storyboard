@@ -15,7 +15,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Storyshare
+module Storyboard
   class Application < Rails::Application
           config.active_record.default_timezone = :utc
     config.generators do |generate|
