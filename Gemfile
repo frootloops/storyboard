@@ -25,6 +25,7 @@ gem 'airbrake'
 gem 'devise'
 gem 'versionist'
 gem 'strong_parameters'
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 group :development do
   gem 'foreman'
@@ -48,6 +49,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'simplecov', require: false
+  gem 'json_spec'
 end
 
 group :staging, :production do

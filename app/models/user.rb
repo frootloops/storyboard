@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
 
   has_many :guides
   has_many :comments
+
+  before_create :ensure_authentication_token
 end

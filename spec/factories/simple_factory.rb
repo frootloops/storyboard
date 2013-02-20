@@ -3,7 +3,7 @@ FactoryGirl.define do
     name     { Forgery::Name.full_name }
     email    { Forgery::Email.address }
     location { Forgery::Address.city }
-    password { Forgery::Basic.password }
+    password 'password'
   end
 
   factory :topic do
