@@ -1,5 +1,10 @@
 Storyboard::Application.routes.draw do
   api_version module: "Api/V1", path: { value: "api/v1" } do
-    resources :sessions, only: [:create, :destroy]
+    resources :users
+    resources :sessions, only: [:create] do
+      collection do
+        delete :destroy, to: :destroy
+      end
+    end
   end
 end

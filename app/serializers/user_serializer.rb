@@ -1,7 +1,8 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :auth_token
+  self.root = false
+  attributes :id, :token, :name
 
-  def auth_token
+  def token
     object.authentication_token
   end
 end
