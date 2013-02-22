@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Api::V1::SessionsController do
+describe Api::V1::TokensController do
   let(:user) { FactoryGirl.create :user }
   let(:auth_token) { user.authentication_token }
   context 'auth with valid params' do
