@@ -22,4 +22,10 @@ describe Api::V1::GuidesController do
 
     expect { guide.reload }.to change(guide, :title).to 'New Title'
   end
+
+  it 'should return all my guides' do
+    get '/api/v1/guides', {}, { 'Authorization' => auth_token }
+
+    expect(JSON.parse(response.body).size).to eql(user.guides.published.count)
+  end
 end
