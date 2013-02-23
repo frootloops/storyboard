@@ -4,11 +4,11 @@ class CreateSteps < ActiveRecord::Migration
       t.references :guide
       t.string :title
       t.string :description
+      t.string :media
 
       t.timestamps
     end
 
-    add_attachment :steps, :media
     add_index :steps, :guide_id
   end
 end

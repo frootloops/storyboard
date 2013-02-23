@@ -30,15 +30,11 @@ ActiveRecord::Schema.define(:version => 20130207194556) do
     t.string   "description"
     t.string   "slug"
     t.string   "supply"
-    t.integer  "likes"
     t.integer  "views"
-    t.integer  "state",                    :default => 0
-    t.datetime "created_at",                              :null => false
-    t.datetime "updated_at",                              :null => false
-    t.string   "intro_image_file_name"
-    t.string   "intro_image_content_type"
-    t.integer  "intro_image_file_size"
-    t.datetime "intro_image_updated_at"
+    t.integer  "state",       :default => 0
+    t.string   "intro_image"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   add_index "guides", ["user_id", "topic_id"], :name => "index_guides_on_user_id_and_topic_id"
@@ -47,12 +43,9 @@ ActiveRecord::Schema.define(:version => 20130207194556) do
     t.integer  "guide_id"
     t.string   "title"
     t.string   "description"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "media_file_name"
-    t.string   "media_content_type"
-    t.integer  "media_file_size"
-    t.datetime "media_updated_at"
+    t.string   "media"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   add_index "steps", ["guide_id"], :name => "index_steps_on_guide_id"

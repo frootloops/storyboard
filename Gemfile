@@ -17,7 +17,7 @@ end
 gem 'jquery-rails'
 gem 'thin'
 gem 'high_voltage'
-gem 'paperclip'
+gem 'carrierwave'
 gem 'formtastic'
 gem 'flutie'
 gem 'bourbon'
@@ -49,7 +49,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'simplecov', require: false
-  gem 'json_spec'
 end
 
 group :staging, :production do

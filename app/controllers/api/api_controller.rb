@@ -9,7 +9,7 @@ class Api::ApiController < ActionController::Base
   def verify_authenticity_token
     @current_user = User.find_by_token request_token
 
-    render status: :unauthorized, json: {} unless @current_user
+    raise 'NotAuthRequest' unless @current_user
   end
 
   def current_user
