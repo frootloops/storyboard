@@ -19,4 +19,9 @@ FactoryGirl.define do
     supply ['ruby', 'c++', 'html']
   end
 
+  factory :step do
+    title { Forgery::LoremIpsum.words(4) }
+    description { Forgery::LoremIpsum.words(25) }
+  end
+
 end
